@@ -12,11 +12,10 @@ namespace LoggerTesting
     {
         // SET Enviornment
         static string basePath = "C:\\temp\\";
-        static string environment = ConfigurationManager.AppSettings["DevlEnvironment"];
-        //string environment = ConfigurationManager.AppSettings["ProdEnvironment"];
+        static string environment = ConfigurationManager.AppSettings["Environment"];        
         static string fullPath = basePath + environment;
+        // SET File Paths
         static string allMessagesfilePath   = fullPath + "\\" + ConfigurationManager.AppSettings["AllMessages"] + "";
-
         static string infoMessagesfilePath  = fullPath + "\\" + ConfigurationManager.AppSettings["Information"] + "";
         static string debugMessagesfilePath = fullPath + "\\" + ConfigurationManager.AppSettings["Debug"] + "";
         static string warnMessagesfilePath  = fullPath + "\\" + ConfigurationManager.AppSettings["Warning"] + "";
